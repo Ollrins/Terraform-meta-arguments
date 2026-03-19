@@ -12,4 +12,5 @@
   <img src="screenshots/S4.png" alt="скриншот файла inventory.ini" width="800"/>
   <br>
   <em>скриншот файла inventory.ini</em>
-</p>
+</p> <br>
+#### https://github.com/Ollrins/Terraform-meta-arguments/commit/dc1871ecfe32c6b4da043daecbc98390b0f8f4a9
