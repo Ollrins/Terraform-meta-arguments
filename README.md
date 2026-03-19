@@ -13,4 +13,4 @@
   <br>
   <em>скриншот файла inventory.ini</em>
 </p> <br>
-#### https://github.com/Ollrins/Terraform-meta-arguments/commit/dc1871ecfe32c6b4da043daecbc98390b0f8f4a9
+ https://github.com/Ollrins/Terraform-meta-arguments/commit/dc1871ecfe32c6b4da043daecbc98390b0f8f4a9
