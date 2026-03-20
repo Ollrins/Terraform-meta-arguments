@@ -3,7 +3,7 @@
 ### Задание 1
 
 <p align="center">
-  <img src="../screenshots/S1.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
+  <img src="screenshots/S1.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
   <br>
   <em>скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud</em>
 </p>
