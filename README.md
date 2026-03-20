@@ -12,10 +12,11 @@
   <img src="screenshots/S4.png" alt="скриншот файла inventory.ini" width="800"/>
   <br>
   <em>скриншот файла inventory.ini</em>
-</p> <br>
+</p> 
+
 ### Задание 5
 <p align="center">
   <img src="screenshots/S5.png" alt="output в виде списка словарей" width="800"/>
   <br>
   <em>output в виде списка словарей</em>
-</p> <br>
+</p> 
