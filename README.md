@@ -13,4 +13,9 @@
   <br>
   <em>скриншот файла inventory.ini</em>
 </p> <br>
- https://github.com/Ollrins/Terraform-meta-arguments/commit/dc1871ecfe32c6b4da043daecbc98390b0f8f4a9
+### Задание 5
+<p align="center">
+  <img src="screenshots/S5.png" alt="output в виде списка словарей" width="800"/>
+  <br>
+  <em>output в виде списка словарей</em>
+</p> <br>
