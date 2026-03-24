@@ -20,7 +20,4 @@
   <br>
   <em>output в виде списка словарей</em>
 </p> 
-  <img src="screenshots/S7.png" alt="output в виде списка словарей" width="800"/>
-  <br>
-  <em>output в виде списка словарей</em>
-</p> 
+
