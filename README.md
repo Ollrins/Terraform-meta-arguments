@@ -47,8 +47,9 @@ wwww
 </p> 
   <br>
   <p align="center">
-  https://github.com/Ollrins/Terraform-meta-arguments/pull/1 
+  ссылкf на PR для ревью https://github.com/Ollrins/Terraform-meta-arguments/pull/1 
     </p> <br>
+    
 ### Задание 4
 <p align="center">
   <img src="screenshots/S3.png" alt="скриншоты проверок из terraform console" width="800"/>
