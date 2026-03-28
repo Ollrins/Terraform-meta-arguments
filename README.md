@@ -2,7 +2,7 @@
 
 ### Задание 1
 <p align="center">
-  <img src="screenshots/S1.png" alt="checkov" width="900"/>
+  <img src="screenshots/S1-1.png" alt="checkov" width="900"/>
   <br>
   </p>
 <p>
