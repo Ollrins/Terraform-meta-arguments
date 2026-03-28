@@ -22,7 +22,7 @@ module "vpc_dev" {
 ###
 
   module "test-vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4421e3a5546a88dba619a88b46a6371ac7c90da4"
   env_name       = "production" 
   network_id     = module.vpc_prod.network_id
   subnet_zones   = ["ru-central1-a", "ru-central1-b", "ru-central1-d"]
@@ -45,7 +45,7 @@ module "vpc_dev" {
 }
 
 module "example-vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4421e3a5546a88dba619a88b46a6371ac7c90da4"
   env_name       = "develop"
   network_id     = module.vpc_dev.network_id
   subnet_zones   = ["ru-central1-a"]
