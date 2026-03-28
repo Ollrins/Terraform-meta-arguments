@@ -1,89 +1,61 @@
-## Домашнее задание к занятию «Управляющие конструкции в коде Terraform»
+## Домашнее задание к занятию «Использование Terraform в команде»
 
 ### Задание 1
 <p align="center">
-  <img src="screenshots/S1.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
+  <img src="screenshots/S1.png" alt="checkov" width="900"/>
   <br>
-  <em>скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud</em>
+  </p>
+<p>
+Ошибки CKV_TF_1 и CKV_TF_2  - строке source используется ?ref=main
+source = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+CKV_TF_1: Требует использовать конкретный commit hash вместо ветки
+CKV_TF_2: Требует использовать тег с версией вместо ветки
+CKV_YC_2: "Ensure compute instance does not have public IP"
+У ВМ есть публичный IP-адрес
+CKV_YC_11: "Ensure security group is assigned to network interface"
+К сетевым интерфейсам не привязана группа безопасности
 </p>
+
+### Задание 2
+<p align="center">
+  <img src="screenshots/S2-1.png" alt="terraform init -migrate-state для миграции state в S3" width="800"/>
+  <br>
+  <em>terraform init -migrate-state для миграции state в S3</em>
+</p> 
+
+<p align="center">
+  <img src="screenshots/S2-2.png" alt="terraform.tfstate" width="800"/>
+  <br>
+  <em>terraform.tfstate</em>
+</p> 
+
+<p align="center">
+  <img src="screenshots/S2-3.png" alt="tfstate lock" width="800"/>
+  <br>
+  <em>tfstate  lock</em>
+</p> 
+
+```bash
+wwww
+```
+
+### Задание 3
+<p align="center">
+  <img src="screenshots/S3.png" alt="PR результат анализа checkov, план изменений инфраструктуры из вывода команды terraform plan" width="800"/>
+  <br>
+  <em>PR результат анализа checkov, план изменений инфраструктуры из вывода команды terraform plan</em>
+</p> 
 
 ### Задание 4
 <p align="center">
-  <img src="screenshots/S4.png" alt="скриншот файла inventory.ini" width="800"/>
+  <img src="screenshots/S3.png" alt="скриншоты проверок из terraform console" width="800"/>
   <br>
-  <em>скриншот файла inventory.ini</em>
+  <em>скриншоты проверок из terraform console</em>
 </p> 
 
 ### Задание 5
 <p align="center">
-  <img src="screenshots/S5.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S3.png" alt="переменные с валидацией" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>переменные с валидацией</em>
 </p> 
-
-1. Скачивание и установка провайдера Yandex Cloud
- Скачать архив с провайдером Yandex Cloud
-```bash
-wget https://github.com/yandex-cloud/terraform-provider-yandex/releases/download/v0.193.0/terraform-provider-yandex_0.193.0_linux_amd64.zip
-```
- Создать папку для провайдера в plugins
- ```bash
-mkdir -p /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/yandex-cloud/yandex/0.193.0/linux_amd64/
-```
- Распаковать архив в нужную папку
-```bash
-unzip terraform-provider-yandex_0.193.0_linux_amd64.zip -d /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/yandex-cloud/yandex/0.193.0/linux_amd64/
-```
-2. Скачивание исходников провайдера Local
- Вернуться в папку проекта
-```bash
-cd /home/Ollrins/ter-homeworks/03/src
-```
- Скачать архив с исходным кодом провайдера local
- ```bash
-wget https://github.com/hashicorp/terraform-provider-local/archive/refs/tags/v2.7.0.tar.gz
-```
- Распаковать архив
-```bash
-tar -xzf v2.7.0.tar.gz
-```
- Установить Go из репозитория
-```bash
-sudo dnf install golang -y
-```
- Проверить установку
- ```bash
-go version
-```
-3. Сборка провайдера Local из исходников
- Перейти в папку с исходниками
-```bash
-cd /home/Ollrins/ter-homeworks/03/src/terraform-provider-local-2.7.0
-```
- Собрать провайдер (требуется установленный Go)
- ```bash
-go build -o terraform-provider-local
-```
- Создать папку для провайдера в plugins
- ```bash
-mkdir -p /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/hashicorp/local/2.7.0/linux_amd64/
-```
- Скопировать собранный провайдер
- ```bash
-cp terraform-provider-local /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/hashicorp/local/2.7.0/linux_amd64/
-```
-4. Проверка структуры папок
- Проверить, что оба провайдера на месте
-```bash
-ls -la /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/hashicorp/local/2.7.0/linux_amd64/
-ls -la /home/Ollrins/ter-homeworks/03/src/plugins/registry.terraform.io/yandex-cloud/yandex/0.193.0/linux_amd64/
-```
-5. Инициализация Terraform с локальными провайдерами
- Вернуться в папку проекта
-```bash
-cd /home/Ollrins/ter-homeworks/03/src
-```
- Инициализировать с указанием папки плагинов
-```bash
-terraform init -plugin-dir=./plugins
-```
