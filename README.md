@@ -47,8 +47,8 @@ wwww
 </p> 
   <br>
   <p align="center">
-  ссылкf на PR для ревью https://github.com/Ollrins/Terraform-meta-arguments/pull/1 
-    </p> <br>
+  <a href="https://github.com/Ollrins/Terraform-meta-arguments/pull/1">ссылка на PR для ревью #1</a>
+</p>
     
 ### Задание 4
 <p align="center">
