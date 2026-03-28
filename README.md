@@ -63,3 +63,15 @@ wwww
   <br>
   <em>переменные с валидацией</em>
 </p> 
+
+### Задание 7
+<p align="center">
+  <img src="screenshots/S7-1.png" alt="cat main.tf создание s3 backet" width="800"/>
+  <br>
+  <em>cat main.tf создание s3 backet</em>
+</p> 
+<p align="center">
+  <img src="screenshots/S7.png" alt="вывод outputs" width="800"/>
+  <br>
+  <em>вывод outputs</em>
+</p> 
