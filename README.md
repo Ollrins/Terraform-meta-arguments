@@ -46,7 +46,9 @@ wwww
   <em>PR результат анализа checkov, план изменений инфраструктуры из вывода команды terraform plan</em>
 </p> 
   <br>
-  https://github.com/Ollrins/Terraform-meta-arguments/pull/1 <br>
+  <p align="center">
+  https://github.com/Ollrins/Terraform-meta-arguments/pull/1 
+    </p> <br>
 ### Задание 4
 <p align="center">
   <img src="screenshots/S3.png" alt="скриншоты проверок из terraform console" width="800"/>
