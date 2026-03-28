@@ -35,10 +35,6 @@ CKV_YC_11: "Ensure security group is assigned to network interface"   <br>
   <em>tfstate  lock</em>
 </p> 
 
-```bash
-wwww
-```
-
 ### Задание 3
 <p align="center">
   <img src="screenshots/S3.png" alt="PR результат анализа checkov, план изменений инфраструктуры из вывода команды terraform plan" width="800"/>
