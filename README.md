@@ -48,14 +48,14 @@ CKV_YC_11: "Ensure security group is assigned to network interface"   <br>
     
 ### Задание 4
 <p align="center">
-  <img src="screenshots/S3.png" alt="скриншоты проверок из terraform console" width="800"/>
+  <img src="screenshots/S4.png" alt="скриншоты проверок из terraform console" width="800"/>
   <br>
   <em>скриншоты проверок из terraform console</em>
 </p> 
 
 ### Задание 5
 <p align="center">
-  <img src="screenshots/S3.png" alt="переменные с валидацией" width="800"/>
+  <img src="screenshots/S5.png" alt="переменные с валидацией" width="800"/>
   <br>
   <em>переменные с валидацией</em>
 </p> 
