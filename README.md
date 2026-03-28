@@ -6,14 +6,14 @@
   <br>
   </p>
 <p>
-Ошибки CKV_TF_1 и CKV_TF_2  - строке source используется ?ref=main
-source = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
-CKV_TF_1: Требует использовать конкретный commit hash вместо ветки
-CKV_TF_2: Требует использовать тег с версией вместо ветки
-CKV_YC_2: "Ensure compute instance does not have public IP"
-У ВМ есть публичный IP-адрес
-CKV_YC_11: "Ensure security group is assigned to network interface"
-К сетевым интерфейсам не привязана группа безопасности
+Ошибки CKV_TF_1 и CKV_TF_2  - строке source используется ?ref=main   <br>
+source = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"   <br>
+CKV_TF_1: Требует использовать конкретный commit hash вместо ветки   <br>
+CKV_TF_2: Требует использовать тег с версией вместо ветки   <br>
+CKV_YC_2: "Ensure compute instance does not have public IP"   <br>
+У ВМ есть публичный IP-адрес   <br>
+CKV_YC_11: "Ensure security group is assigned to network interface"   <br>
+К сетевым интерфейсам не привязана группа безопасности   <br>
 </p>
 
 ### Задание 2
@@ -45,7 +45,8 @@ wwww
   <br>
   <em>PR результат анализа checkov, план изменений инфраструктуры из вывода команды terraform plan</em>
 </p> 
-
+  <br>
+  https://github.com/Ollrins/Terraform-meta-arguments/pull/1 <br>
 ### Задание 4
 <p align="center">
   <img src="screenshots/S3.png" alt="скриншоты проверок из terraform console" width="800"/>
